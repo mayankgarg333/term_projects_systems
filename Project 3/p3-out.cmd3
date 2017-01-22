@@ -1,0 +1,48 @@
+journal: jblk #: 8; jblk->free: 1; jblk->st: 1020; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1022; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1020; dblk->next: -1
+journal: jblk #: 9; jblk->free: 2; jblk->st: 0; jblk->next: 26
+before: dblk #: 25; dblk->free: 0; dblk->st: 0; dblk->next: 26
+checkpt: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+journal: jblk #: 10; jblk->free: 1; jblk->st: 1020; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1020; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1020; dblk->next: -1
+journal: jblk #: 13; jblk->free: 1; jblk->st: 1016; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1020; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1016; dblk->next: -1
+journal: jblk #: 14; jblk->free: 2; jblk->st: 0; jblk->next: 27
+before: dblk #: 26; dblk->free: 0; dblk->st: 0; dblk->next: 27
+checkpt: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+journal: jblk #: 15; jblk->free: 1; jblk->st: 1016; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1016; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1016; dblk->next: -1
+open: name = vacuum; flags = 2
+open: name = vacuum; fd = 0
+write: fd = 0; buf file = data1; unused = 1
+write: fd = 0; buf file = data2; unused = 1
+seek: fd = 0; size = 500
+read: fd = 0; buf = 0x9edba60; size = 22
+
+ ======= read: 0; 22 bytes ==========
+rrrrrrrrrrrrrrrrrrrrrr
+seek: fd = 0; size = 1000
+read: fd = 0; buf = 0x9edba60; size = 22
+
+ ======= read: 0; 22 bytes ==========
+rrrrrrrrrrrrrrrrrrrrtt
+close: 0
+fileClose: closed fd 0 for vacuum
+checkpoint: checkpoint journal to disk
+journal: jblk #: 18; jblk->free: 2; jblk->st: 0; jblk->next: 26
+before: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+checkpt: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+journal: jblk #: 19; jblk->free: 2; jblk->st: 0; jblk->next: 26
+before: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+checkpt: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+journal: jblk #: 20; jblk->free: 2; jblk->st: 0; jblk->next: 26
+before: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+checkpt: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+journal: jblk #: 3; jblk->free: 2; jblk->st: 0; jblk->next: 26
+before: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+checkpt: dblk #: 25; dblk->free: 2; dblk->st: 0; dblk->next: 26
+

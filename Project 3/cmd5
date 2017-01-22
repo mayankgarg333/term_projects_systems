@@ -1,0 +1,12 @@
+open flume, 2
+creat zoom, 2
+creat tomb, 1 
+creat gloom, 3
+seek 0, 500
+read 0, buf, 22
+seek 0, 1000
+read 0, buf, 22
+close 0
+creat rheum, 2
+creat whom, 1
+close 0

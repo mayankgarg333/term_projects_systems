@@ -1,0 +1,3 @@
+open flume, 2
+write 0, data1, 1
+write 0, data2, 1

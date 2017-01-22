@@ -1,0 +1,17 @@
+creat: name = vavoom; mode = 1
+creat: name = vavoom; fd = 0
+close: 0
+fileClose: closed fd 0 for vavoom
+open: name = vavoom; flags = 1
+open: name = vavoom; fd = 0
+checkpoint: checkpoint journal to disk
+journal: jblk #: 3; jblk->free: 1; jblk->st: 1022; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1023; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1022; dblk->next: -1
+journal: jblk #: 4; jblk->free: 2; jblk->st: 0; jblk->next: 25
+before: dblk #: 24; dblk->free: 0; dblk->st: 0; dblk->next: 25
+checkpt: dblk #: 24; dblk->free: 2; dblk->st: 0; dblk->next: 25
+journal: jblk #: 5; jblk->free: 1; jblk->st: 1022; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1022; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1022; dblk->next: -1
+

@@ -1,0 +1,75 @@
+journal: jblk #: 6; jblk->free: 2; jblk->st: 0; jblk->next: 27
+before: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+checkpt: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+journal: jblk #: 7; jblk->free: 2; jblk->st: 0; jblk->next: 27
+before: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+checkpt: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+journal: jblk #: 8; jblk->free: 2; jblk->st: 0; jblk->next: 27
+before: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+checkpt: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+journal: jblk #: 11; jblk->free: 2; jblk->st: 0; jblk->next: 27
+before: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+checkpt: dblk #: 26; dblk->free: 2; dblk->st: 0; dblk->next: 27
+open: name = flume; flags = 2
+open: name = flume; fd = 0
+creat: name = zoom; mode = 2
+creat: name = zoom; fd = 1
+creat: name = tomb; mode = 1
+creat: name = tomb; fd = 2
+creat: name = gloom; mode = 3
+creat: name = gloom; fd = 3
+seek: fd = 0; size = 500
+read: fd = 0; buf = 0x8315678; size = 22
+
+ ======= read: 0; 22 bytes ==========
+rrrrrrrrrrrrrrrrrrrrrr
+seek: fd = 0; size = 1000
+read: fd = 0; buf = 0x8315678; size = 22
+
+ ======= read: 0; 22 bytes ==========
+rrrrrrrrrrrrrrrrrrrrtt
+close: 0
+fileClose: closed fd 0 for flume
+creat: name = rheum; mode = 2
+creat: name = rheum; fd = 0
+creat: name = whom; mode = 1
+creat: name = whom; fd = 4
+journal: jblk #: 14; jblk->free: 1; jblk->st: 1008; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1016; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1008; dblk->next: -1
+journal: jblk #: 15; jblk->free: 2; jblk->st: 0; jblk->next: 36
+before: dblk #: 35; dblk->free: 0; dblk->st: 0; dblk->next: 36
+checkpt: dblk #: 35; dblk->free: 2; dblk->st: 0; dblk->next: 36
+journal: jblk #: 16; jblk->free: 1; jblk->st: 1008; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1008; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 1008; dblk->next: -1
+journal: jblk #: 19; jblk->free: 1; jblk->st: 992; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 1008; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 992; dblk->next: -1
+journal: jblk #: 20; jblk->free: 2; jblk->st: 0; jblk->next: 37
+before: dblk #: 36; dblk->free: 0; dblk->st: 0; dblk->next: 37
+checkpt: dblk #: 36; dblk->free: 2; dblk->st: 0; dblk->next: 37
+journal: jblk #: 21; jblk->free: 1; jblk->st: 992; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 992; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 992; dblk->next: -1
+journal: jblk #: 4; jblk->free: 1; jblk->st: 960; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 992; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 960; dblk->next: -1
+journal: jblk #: 5; jblk->free: 2; jblk->st: 0; jblk->next: 38
+before: dblk #: 37; dblk->free: 0; dblk->st: 0; dblk->next: 38
+checkpt: dblk #: 37; dblk->free: 2; dblk->st: 0; dblk->next: 38
+journal: jblk #: 6; jblk->free: 1; jblk->st: 960; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 960; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 960; dblk->next: -1
+journal: jblk #: 9; jblk->free: 1; jblk->st: 896; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 960; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 896; dblk->next: -1
+journal: jblk #: 10; jblk->free: 2; jblk->st: 0; jblk->next: 39
+before: dblk #: 38; dblk->free: 0; dblk->st: 0; dblk->next: 39
+checkpt: dblk #: 38; dblk->free: 2; dblk->st: 0; dblk->next: 39
+journal: jblk #: 11; jblk->free: 1; jblk->st: 896; jblk->next: -1
+before: dblk #: 23; dblk->free: 1; dblk->st: 896; dblk->next: -1
+checkpt: dblk #: 23; dblk->free: 1; dblk->st: 896; dblk->next: -1
+close: 0
+fileClose: closed fd 0 for rheum
+

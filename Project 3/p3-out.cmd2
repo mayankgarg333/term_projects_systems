@@ -1,0 +1,11 @@
+creat: name = vacuum; mode = 2
+creat: name = vacuum; fd = 0
+creat: name = flume; mode = 3
+creat: name = flume; fd = 1
+close: 0
+fileClose: closed fd 0 for vacuum
+open: name = vavoom; flags = 1
+open: name = vavoom; fd = 0
+close: 0
+fileClose: closed fd 0 for vavoom
+

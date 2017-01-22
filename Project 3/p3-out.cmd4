@@ -1,0 +1,5 @@
+open: name = flume; flags = 2
+open: name = flume; fd = 0
+write: fd = 0; buf file = data1; unused = 1
+write: fd = 0; buf file = data2; unused = 1
+
